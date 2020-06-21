@@ -32,7 +32,7 @@ class DemoController
               //获取余额信息
               $blance = $ztsms->getBalance();
               //发送自定义短信，第二个参数必须包含签名【xxxx】
-              $res = $ztsms->sendCustomizeMsg('phone',"【猎人】尊重的用户您好,您的验证码是:123456,请妥善保管！");
+              $res = $ztsms->sendCustomizeMsg('phone',"【这里是签名】尊重的用户您好,您的验证码是:123456,请妥善保管！");
               if($res){
                 //成功
               }       
