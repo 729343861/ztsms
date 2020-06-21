@@ -1,6 +1,6 @@
 {
     "name": "yangwenqu/ztsms",
-    "description": "send code to mobile ,cms api",
+    "description": "助通科技Sms 短信业务api接口",
     "type": "library",
     "require": {
         "php": ">=5.4"
@@ -18,5 +18,4 @@
             "Yangwenqu\\ZtSms\\": "src/"
         }
     }
-
 }

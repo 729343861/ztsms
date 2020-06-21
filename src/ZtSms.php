@@ -48,7 +48,7 @@ class ZtSms
 
         if($data['code'] != 200){
 
-            return false;
+            throw new \Exception($data['msg']);
         }
 
         return $data['sumSms'];
@@ -86,7 +86,7 @@ class ZtSms
 
         if($data['code'] != 200){
 
-            return false;
+            throw new \Exception($data['msg']);
         }
 
         return true;
@@ -107,11 +107,12 @@ class ZtSms
         curl_setopt($curl, CURLOPT_TIMEOUT, 30);
         curl_setopt($curl, CURLOPT_HEADER, false);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($curl, CURLOPT_HEADER, true);
+//        curl_setopt($curl, CURLOPT_HEADER, true);
         curl_setopt($curl, CURLOPT_HTTPHEADER, array(
             'Content-Type: application/json; charset=utf-8'
         ));
         $result = curl_exec($curl);
+
         if (curl_errno($curl)) {
             throw new \Exception(curl_error($curl));
         }
