@@ -1,0 +1,22 @@
+{
+    "name": "yangwenqu/ztsms",
+    "description": "send code to mobile ,cms api",
+    "type": "library",
+    "require": {
+        "php": ">=5.4"
+    },
+    "license": "apache-2.0",
+    "authors": [
+        {
+            "name": "yangwenqu",
+            "email": "729343861@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Yangwenqu\\ZtSms\\": "src/"
+        }
+    }
+
+}
