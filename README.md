@@ -8,7 +8,7 @@
 
 ## 安装
 ```shell
-composer require yangwenqu/ztsms
+composer require yangwenqu/ztsms:dev-master
 ```
 
 ## 使用说明
